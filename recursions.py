@@ -22,11 +22,10 @@ def gcd(a, b):
         a, b = b, a%b
     return a
 
-# def compareTo(s1, s2):
-
-
-if __name__ == '__main__':
-    # expect 8
-    print rec_fib(6)
-    # expect 10
-    print gcd(10, 20)
+def compareTo(s1, s2):
+    if s1 == s2:
+        return 0
+    elif len(s1) > len(s2):
+        return len(s1) - len(s2)
+    elif len(s1) < len(s2):
+        return int(len(s1) - len(s2))
